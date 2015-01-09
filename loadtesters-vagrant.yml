@@ -1,0 +1,8 @@
+---
+# file: loadtesters-vagrant.yml
+- hosts: loadtesters
+  sudo: yes
+  roles:
+    - siege
+
+- include: loadtesters.yml

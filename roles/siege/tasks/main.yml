@@ -1,0 +1,14 @@
+- name: 'Update Apt Cache'
+  apt: update_cache=yes
+
+- name: 'Upgrade Apt'
+  apt: upgrade=safe
+
+- name: ensure siege is at the latest version
+  apt: pkg=siege state=latest
+
+- name: ensure vim is at the latest version
+  apt: pkg=vim state=latest
+
+- name: ensure screen is at the latest version
+  apt: pkg=screen state=latest

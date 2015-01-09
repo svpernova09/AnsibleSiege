@@ -1,0 +1,6 @@
+---
+# file: loadtesters.yml
+- hosts: loadtesters
+  sudo: yes
+  roles:
+    - siege
